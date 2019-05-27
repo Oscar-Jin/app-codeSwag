@@ -12,6 +12,9 @@
 		04A080F5229B9DBB00C0499D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A080F3229B9DBB00C0499D /* Main.storyboard */; };
 		04A080F7229B9DC000C0499D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A080F6229B9DC000C0499D /* Assets.xcassets */; };
 		04A080FA229B9DC000C0499D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A080F8229B9DC000C0499D /* LaunchScreen.storyboard */; };
+		04E7DFE0229BB340004DAD2C /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7DFDF229BB340004DAD2C /* CategoryTableViewCell.swift */; };
+		04E7DFE2229BBA98004DAD2C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7DFE1229BBA98004DAD2C /* Category.swift */; };
+		04E7DFE5229BC071004DAD2C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7DFE4229BC071004DAD2C /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		04A080F6229B9DC000C0499D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A080F9229B9DC000C0499D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A080FB229B9DC000C0499D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E7DFDF229BB340004DAD2C /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		04E7DFE1229BBA98004DAD2C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		04E7DFE4229BC071004DAD2C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047B7BC6229BA19900240E76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04E7DFE1229BBA98004DAD2C /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		047B7BC7229BA19F00240E76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04E7DFDF229BB340004DAD2C /* CategoryTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		047B7BC8229BA1A400240E76 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04A080F1229B9DBB00C0499D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		04A080E3229B9DBB00C0499D = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +84,25 @@
 		04A080EE229B9DBB00C0499D /* Code Swag */ = {
 			isa = PBXGroup;
 			children = (
+				04E7DFE3229BC049004DAD2C /* Service */,
+				047B7BC6229BA19900240E76 /* Model */,
+				047B7BC7229BA19F00240E76 /* View */,
+				047B7BC8229BA1A400240E76 /* Controller */,
 				04A080EF229B9DBB00C0499D /* AppDelegate.swift */,
-				04A080F1229B9DBB00C0499D /* ViewController.swift */,
 				04A080F3229B9DBB00C0499D /* Main.storyboard */,
 				04A080F6229B9DC000C0499D /* Assets.xcassets */,
 				04A080F8229B9DC000C0499D /* LaunchScreen.storyboard */,
 				04A080FB229B9DC000C0499D /* Info.plist */,
 			);
 			path = "Code Swag";
+			sourceTree = "<group>";
+		};
+		04E7DFE3229BC049004DAD2C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				04E7DFE4229BC071004DAD2C /* DataService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +178,9 @@
 			files = (
 				04A080F2229B9DBB00C0499D /* ViewController.swift in Sources */,
 				04A080F0229B9DBB00C0499D /* AppDelegate.swift in Sources */,
+				04E7DFE0229BB340004DAD2C /* CategoryTableViewCell.swift in Sources */,
+				04E7DFE2229BBA98004DAD2C /* Category.swift in Sources */,
+				04E7DFE5229BC071004DAD2C /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
